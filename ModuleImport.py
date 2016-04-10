@@ -10,3 +10,10 @@ from File import readSampleFile
 readSampleFile()
 
 
+
+#import Line class
+from OOP import Line
+
+line = Line((1,2),(3,4))
+print line.distance()
+print line.slope()

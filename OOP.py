@@ -17,10 +17,8 @@ class Line(object):
         delta_y = self.point2[1] - self.point1[1]
         delta_x = self.point2[0] - self.point1[0]
         slope = delta_y / float(delta_x)
-        print "Calculate distance between {point1} and {point2}, deltaY={deltaY}, deltaX={deltaX}, slope = {slope}" \
+        print "Calculate slope between {point1} and {point2}, deltaY={deltaY}, deltaX={deltaX}, slope = {slope}" \
             .format(point1=self.point1, point2=self.point2, deltaY=delta_y, deltaX=delta_x, slope=slope)
+        return slope
 
 
-line = Line((3, 2), (8, 10))
-line.distance();
-line.slope();
